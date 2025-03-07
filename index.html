@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>OPS Plan Overview</title>
+  <style>
+    body {
+      background-color: #ffffff; /* light blue */
+      font-family: Arial, sans-serif;
+      font-size: 19px;
+      color: black;
+      margin: 20px;
+      line-height: 1.5;
+    }
+    h1, h2 {
+      font-size: 19px;
+    }
+    .section {
+      margin-bottom: 20px;
+    }
+    .point {
+      margin-left: 20px;
+      list-style-type: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>OPS Plan Overview</h1>
+  <h2>Fiscal year internal help desk operations plan</h2>
+  
+  <div class="section">
+    <h2>Introduction</h2>
+    <ul> 
+      <li class="point" >Hi I am Lovedeep Singh</li>
+    
+      <li class="point">
+      <img src="Picture1.jpg"style="width:100px;height:100px;">
+      </li>
+    </ul>
+  </div>
+  <div class="section">
+    <h2 >Reason for this plan</h2>   
+    <ul><li class="point">Enhance help desk efficiency and customer support via improved operations.</li></ul>
+  </div>
+  <div class="section">
+    <h2>Plan Purpose</h2>
+    <ul>
+      <li class="point">Guide operations; enhance help desk performance.</li>
+      <li class="point">Mission: Deliver efficient service, delight customers with timely solutions.</li>
+      <li class="point">Vision: Empower future operations; innovate help desk efficiency endlessly.</li>
+    </ul>
+  </div>
+  
+  <div class="section">
+    <h2>SMART Goals & Benefits</h2>
+    <ul>
+      <li class="point">
+        <strong>Goal 1:</strong> Increase ticket resolution by 20% this fiscal year.
+        <br><em>Benefit:</em> Faster support response saves time and enhances productivity.
+      </li>
+      <li class="point">
+        <strong>Goal 2:</strong> Reduce average response time to under five minutes.
+        <br><em>Benefit:</em> Quick replies boost satisfaction and operational efficiency.
+      </li>
+      <li class="point">
+        <strong>Goal 3:</strong> Achieve 90% positive feedback from service surveys.
+        <br><em>Benefit:</em> Improved service quality ensures loyal customer satisfaction.
+      </li>
+      <li class="point">
+        <strong>Goal 4:</strong> Implement automated ticket sorting within six months.
+        <br><em>Benefit:</em> Automation streamlines workflow, reducing waiting times.
+      </li>
+      <li class="point">
+        <strong>Goal 5:</strong> Train staff quarterly to enhance technical expertise.
+        <br><em>Benefit:</em> Skilled staff improve problem-solving and user satisfaction.
+      </li>
+    </ul>
+  </div>
+  
+ <!-- Feedback Button -->
+<button id="feedbackBtn">Please Provide Your Valuable Feedback Here</button>
+
+<!-- Modal Structure -->
+<div id="feedbackModal" style="display: none; position: fixed; top: 0; left: 0; 
+     width: 100%; height: 100%; background-color: rgba(0,0,0,0.5);">
+  <div class="modal-content" style="background-color: #fff; margin: 15% auto; padding: 20px; 
+       width: 80%; max-width: 400px; position: relative;">
+    <span id="closeModal" style="position: absolute; top: 10px; right: 15px; cursor: pointer;">&times;</span>
+    <h2>Feedback</h2>
+    <form>
+      <label for="feedback">Your Feedback:</label><br>
+      <textarea id="feedback" name="feedback" rows="4" style="width: 100%;"></textarea><br><br>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+<script>
+  const feedbackBtn = document.getElementById('feedbackBtn');
+  const feedbackModal = document.getElementById('feedbackModal');
+  const closeModal = document.getElementById('closeModal');
+
+  // Open the modal when feedback button is clicked
+  feedbackBtn.addEventListener('click', function() {
+    feedbackModal.style.display = 'block';
+  });
+
+  // Close the modal when the close (×) is clicked
+  closeModal.addEventListener('click', function() {
+    feedbackModal.style.display = 'none';
+  });
+
+  // Close the modal if user clicks outside the modal content
+  window.addEventListener('click', function(event) {
+    if (event.target === feedbackModal) {
+      feedbackModal.style.display = 'none';
+    }
+  });
+</script>
+
+</body>
+</html>
